@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<header>
+
+<div class= "header-link">Home</div>
+<div class= "header-link">Training Journey</div>
+<div class= "header-link">Statistics</div>
+<div class= "header-link">Weaknesses</div>
+<div class= "header-link">Contact</div>
+
+</header>
+<div id="main">
+
+</div>
+<div id="footer">
+
+</div>
+</body>
+</html>

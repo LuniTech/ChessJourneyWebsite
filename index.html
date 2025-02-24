@@ -1,0 +1,211 @@
+<!DOCTYPE hmtl>
+<html>
+<!-- This is the work of Zipho Innocent Lunika -->
+<head>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Satisfy&display=swap" rel="stylesheet">
+
+<style>
+
+#header {
+
+display: flex;
+flex-wrap: wrap;
+gap : 5%;
+justify-content: justify;
+ background: linear-gradient(to right, rgb(230, 239, 171
+), rgb(222, 253, 8));
+height: 40vh;
+border-radius: 10px;
+}
+
+#mainBody {
+display: flex;
+gap: 0.5%;
+background-color: transparent;
+height:90vh;
+margin-top: 1%;
+margin-bottom:1%;
+border-radius: 2%;
+}
+
+#footer {
+background-color: yellow;
+border-radius: 2%;
+}
+
+#logo
+{
+//margin: 0.5%;
+border: solid 2px black;
+width:30%;
+border-radius:50%;
+overflow: hidden;
+}
+
+.quote 
+{
+//border: solid 2px black;
+width:60%;
+margin: 0.5%;
+font-family: "Satisfy", serif;
+font-size: 170%;
+}
+#NavBar {
+width: 30%;
+background-color:rgba(127, 140, 141, 0.5);
+border-radius: 10px;
+
+}
+#bioPane { 
+font-family: "Delicious Handrawn", serif;
+width: 90%;
+background-color: rgba(247, 220, 111,0.7);
+border-radius: 10px;
+)
+
+}
+
+#bioPane h1{
+font-size: 300%;
+text-align: center;
+}
+
+
+
+
+.nav-button{
+display:flex;
+flex-direction:row;
+height: 13%;
+padding-bottom: 5%;
+//text-align: center;
+font-size: 120%;
+
+
+}
+
+.paragraphs{
+font-size: 200%;
+
+}
+
+.nav-button img{
+//display:inline-block;
+height:80%;
+width:20%;
+padding:0;
+//border:black solid .5px;
+}
+
+.nav-button:hover
+{
+background-color: #7f8c8d;
+
+}
+.nav-button a
+{
+/*So here I have to ensure that the text is aligned centrally in the vertical direction too!*/
+      height: 100%;  
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            
+             
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="header">
+
+<div id="logo">
+<img src="lunikaChessLogo2.png" height="100%" width="100%">
+</div>
+<div class= "quote">
+<span style="font-size: 300%">Insert Random Quote here!</span>
+</div>
+
+</div>
+
+<div id="mainBody">
+
+<div id="NavBar">
+
+<div class= "nav-button"><img src="SVG Icons/man-svgrepo-com.svg" alt="School Icon"><a href="BiographyPage.html">Biography</a></div>
+<div class= "nav-button"> <img src="SVG Icons/rocket-svgrepo-com.svg" alt="School Icon"><a href="MyTraining.html">Training journey</a></div>
+<div class= "nav-button"><img src="SVG Icons/star-svgrepo-com.svg" alt="School Icon"><a>Influences</a></div>
+<div class= "nav-button"><img src="SVG Icons/chart-pie-svgrepo-com.svg" alt="School Icon"><a href="MyStats.html">Statistics</a></div>
+<div class= "nav-button"><img src="SVG Icons/band-aid-svgrepo-com.svg" alt="School Icon"><a href="weaknesses.html">Weaknesses</a></div>
+<div class= "nav-button"><img src="SVG Icons/globe-1-svgrepo-com.svg" alt="School Icon"><a href="ContactMe.html">Contact page</a></div>
+
+</div>
+<div id= "bioPane">
+<h1> Welcome </h1>
+<p class="paragraphs">Welcome! This is a site I made to keep track of my progress and to evaluate myself as a player. The site serves the purpose of keeping me somewhat interested in the chess world. I've been losing track of it recently. Perhaps I should go back to the basics of just enjoying a puzzle or a study or pondering on an annotated game—not worrying about winning or being right or ratings. Just enjoying the subtleties and the nuances that arise...enjoying chess in its purest form—as an abstract art that is good for the mind.</p>
+
+</div>
+
+</div>
+
+
+
+
+<div id="footer">Made with basic Html, css and Javascript...no React, bootstrap etc.
+
+
+</div>
+
+
+<script>
+var quotesArr = [["Don't judge each day by the harvest you reap but by the seeds that you plant","Robert Louis Stevenson"],
+
+
+["Strategy requires thought, tactics require observation","Max Euwe"],
+["I don’t believe in psychology. I believe in good moves","Bobby Fischer"],
+["Chess is a fairy tale of 1001 blunders ","Savielly Tartakower"],
+["Your body has to be in top condition. Your Chess deteriorates as your body does. You can’t separate body from mind","Bobby Fischer"],
+["Without error there can be no brilliancy","Emanuel Lasker"],
+["Many have become Chess Masters, no one has become the Master of Chess","Siegbert Tarrasch"],
+["Play the opening like a book, the middle game like a magician, and the endgame like a machine","Spielmann"],
+["Chess is the art of analysis","Mikhail Botvinnik"],
+["A player surprised is half beaten","Proverb"],
+["The essence of Chess is thinking about what Chess is","David Bronstein"],
+["There is only one good, knowledge, and one evil, ignorance","Socrates"],
+["I would never die for my beliefs because I might be wrong"," Bertrand Russell"],
+["When the Chess game is over, the Pawn and the King go back to the same box","Irish saying"],
+["Every Chess master was once a beginner","Chernev"],
+["He who fears an isolated Queen’s Pawn should give up Chess","Siegbert Tarrasch"],
+["A gambit is best refuted by accepting it","Wilhelm Steinitz"],
+["A bad plan is better than none at all","Frank Marshall"],
+["Chess is the art which expresses the science of logic"," Mikhail Botvinnik"],
+["On the chessboard, lies and hypocrisy do not survive long","Emanuel Lasker"],
+["Chess is really ninety nine percent calculation","Soltis"],
+["Chess is 99 percent tactics","Teichmann"],
+["Mistrust is the most necessary characteristic of the Chess player","Siegbert Tarrasch"],
+["Chess opens and enriches your mind","Saudin Robovic"]
+
+];
+var randIndex = parseInt(Math.random()*23);
+var qBlock = document.getElementsByClassName("quote");
+
+qBlock[0].innerHTML ="\""+ quotesArr[randIndex][0]+"\""+" <br><br> "+"- "+quotesArr[randIndex][1];
+
+</script>
+
+
+
+</body>
+
+</html>
