@@ -2,40 +2,147 @@
 <html>
 <head>
 <style>
-header{
-display:flex;
-flex-direction: horizontal;
-gap: 13%;
-}
+    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+    }
 
-.header-link:hover{
-text-decoration:underline;
-color:blue;
-}
-.head-anchor{
-text-decoration:none;
-}
+    header {
+        display: flex;
+        justify-content: space-around;
+        gap: 7%;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .header-link:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .head-anchor {
+        text-decoration: none;
+        color: inherit;
+    }
+
+   
+    #side-panel {
+        width: 200px;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-right: 1px solid #ddd;
+        position: fixed;
+        top: 60px; /* Adjusted to account for the fixed header */
+        bottom: 0;
+        overflow-y: auto;
+    }
+
+    #side-panel a {
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+        color: #333;
+    }
+
+    #side-panel a:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+
+   
+    #main {
+        margin-left: 240px; 
+        padding: 80px 20px 20px; 
+        width: calc(100% - 240px);
+    }
+
+    section {
+        margin-bottom: 40px;
+    }
+
+   
+    #footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-top: 1px solid #ddd;
+        margin-top: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 </style>
-
 </head>
 <body>
-<header>
+  
+   <header>
+        <div class="header-link"><a class="head-anchor" href="index.html">Home</a></div>
+        <div class="header-link"><a class="head-anchor" href="MyTraining.html">Training Journey</a></div>
+        <div class="header-link"><a class="head-anchor" href="MyStats.html">Statistics</a></div>
+        <div class="header-link"><a class="head-anchor" href="Weaknesses.html">Weaknesses</a></div>
+        <div class="header-link"><a class="head-anchor" href="Influences.html">Influences</a></div>
+        <div class="header-link"><a class="head-anchor" href="ContactMe.html">Contact</a></div>
+    </header>
 
-<div class= "header-link"><a class="head-anchor" href="index.html">Home</a></div>
-<div class= "header-link"><a class="head-anchor" href="BiographyPage.html">Biography</a></div>
-<div class= "header-link"><a class="head-anchor" href="MyTraining.html">Training Journey</a></div>
-<div class= "header-link"><a class="head-anchor" href="MyStats.html">Statistics<a/></div>
-<div class= "header-link"><a class="head-anchor" href="Weaknesses.html">Weaknesses</a></div>
-<div class= "header-link"><a class="head-anchor" href="ContactMe.html">Contact</a></div>
 
-</header>
-<div id="main">
-<h1>Weaknesses</h1>
- 
-</div>
-<br>
-<div id="footer">
-&copy Zipho Innocent Lunika 2025
-</div>
+    <div id="side-panel">
+         <h3>Contents</h3>
+        <a href="#openings">Openings</a>
+        <a href="#planning-strategy">Planning and Strategy</a>
+        <a href="#calculation">Calculation</a>
+  
+    </div>
+
+    <div id="main">
+        <h1>My Weaknesses</h1>
+
+        
+        <section id="openings">
+            <h2>Openings</h2>
+            <p>I tend to struggle against some openings. Here are the opening variations in which I struggle quite a bit:</p>
+            <ul>
+    <li><strong>Tromposky Opening:</strong> I have never actually studied the opening lines.</li>
+    <li><strong>Nimzo-Indian:</strong> I do poorly because I am a poor positional player and I have not perused the variations and themes in depth.</li>
+    <li><strong>Sicilian Accelerated Dragon:</strong> A CM really crushed me in this opening in over 5 games. Apparently, I am not prepared!</li>
+    <li><strong>Bogo-Indian:</strong> I play but I have no idea what the main ideas and strategic themes are.</li>
+    <li><strong>English Opening:</strong> It's a work in progress.</li>
+    <li><strong>1. Nc3:</strong> This move just confuses me.</li>
+    <li><strong>1. Nf3:</strong> Very flexible with many transpositions.</li>
+    <li><strong>Maroczy Bind:</strong> I don't know how to play against it.</li>
+    <li><strong>London System:</strong> My preparation lacks depth.</li>
+</ul>
+        </section>
+
+       
+        <section id="planning-strategy">
+            <h2>Planning and Strategy</h2>
+            <p>I struggle against flexible and positional openings like 1.c4, 1.Nf3, 1. Nc3 and systems based opening like the london and colle. As a result my planning skills and general positional play naturally poor.</p>
+
+<p> I do very poorly when solving postional puzzles. I have no systmatic approach at all! Perhaps I should train Jeremy Silman's thinking technique?</p>
+    
+        </section>
+
+        <section id="calculation">
+            <h2>Calculation</h2>
+            <p>Alexander Kotov once said that no grandmaster calculates variations poorly. I am terrible at calucalation and visualization. I can certainly compute obvious short term tactics. I am simply disorganized when analyzing variations</p>
+        
+        </section>
+
+     
+
+
+
+    </div>
+
+        <div id="footer">
+        &copy; Zipho Innocent Lunika 2025
+    </div>
 </body>
 </html>

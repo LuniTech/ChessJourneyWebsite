@@ -2,65 +2,220 @@
 <html>
 <head>
 <style>
-header{
-display:flex;
-flex-direction: horizontal;
-gap: 13%;
-}
+    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+    }
 
-.header-link:hover{
-text-decoration:underline;
-color:blue;
-}
-.head-anchor{
-text-decoration:none;
-}
+    
+    header {
+        display: flex;
+        justify-content: space-around;
+        gap: 7%;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .header-link:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .head-anchor {
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+    #side-panel {
+        width: 200px;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-right: 1px solid #ddd;
+        position: fixed;
+        top: 60px; /* Adjusted to account for the fixed header */
+        bottom: 0;
+        overflow-y: auto;
+    }
+
+    #side-panel a {
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+        color: #333;
+    }
+
+    #side-panel a:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+
+   
+    #main {
+        margin-left: 240px; 
+        padding: 80px 20px 20px; 
+        width: calc(100% - 240px);
+    }
+
+    section {
+        margin-bottom: 40px;
+    }
+
+    
+    #footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-top: 1px solid #ddd;
+        margin-top: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 </style>
-
 </head>
 <body>
-<header>
+   
+    <header>
+        <div class="header-link"><a class="head-anchor" href="index.html">Home</a></div>
+<div class="header-link"><a class="head-anchor" href=" BiographyPage.html">Biography</a></div>
+        <div class="header-link"><a class="head-anchor" href="MyTraining.html">Training Journey</a></div>
+        <div class="header-link"><a class="head-anchor" href="MyStats.html">Statistics</a></div>
+                                  
+<div class="header-link"><a class="head-anchor" href="Influences.html">Influences</a></div>
 
-<div class= "header-link"><a class="head-anchor" href="index.html">Home</a></div>
-<div class= "header-link"><a class="head-anchor" href="MyTraining.html">Training Journey</a></div>
-<div class= "header-link"><a class="head-anchor" href="MyStats.html">Statistics<a/></div>
-<div class= "header-link"><a class="head-anchor" href="Weaknesses.html">Weaknesses</a></div>
-<div class= "header-link"><a class="head-anchor" href="ContactMe.html">Contact</a></div>
+        <div class="header-link"><a class="head-anchor" href="Weaknesses.html">Weaknesses</a></div>
+        <div class="header-link"><a class="head-anchor" href="ContactMe.html">Contact</a></div>
+    </header>
 
-</header>
-<div id="main">
-<h1>Biography</h1>
-<h2>Early Years</h2>
- My name is Innocent. I mainly play blitz chess occasionally. Started playing at around the age of 9 when my mother bought me a chess/checkers set. Of course I had to figure out the rules on my own by reading the instructions that came with the set and then later on by reading books from the Msunduzi library. <br>
-<img src="pics\MsunduziLibrary.jpg"></img>
+ 
+    <div id="side-panel">
+         <h3>Contents</h3>
+        <a href="#tactics">Tactics</a>
+        <a href="#anti-blunder">Anti-Blunder</a>
+        <a href="#positional-play">Positional Play</a>
+        <a href="#annotated-games">Annotated Games Collection</a>
+        <a href="#endgames">Endgames</a>
+        <a href="#opening-repertoire">Opening Repertoire</a>
+    </div>
+
+    
+    <div id="main">
+        <h1>My Training Journey</h1>
+ <section id="Introduction">
+In high school, my primary training consisted of playing the chess titans program on a laptop. I could only manage to beat level 6 on a windows 7 2.1 Ghz duo core computer. Level 7 was difficult to beat.
+
+<img src= "pics\training\chessTitansSS.jpg"/>
+ I would also play against the chessmaster program created by ubisoft for mobile devices. 
+<img src= "pics\training\chessmasterMobile.jpg"/><br>
+ Another program I recall playing is the kasparov chess chess program.
+
+Later on towards in my final year high school, I taught myself algebraic notation for the purpose of recording my games and learning from my mistakes. At this point I followed along with the very first world chess championship match with Steinitz against Zuckertork. <br>
+I also followed the match of deepblue against kasparov using a pocket chess set I bought from the local convenience store.
+
+</section>
+
+      
+        <section id="tactics">
+            <h2>Tactics</h2>
+            <p>
+So far, I have managed to solve 3334 puzzles on chess.com with a puzzle rating of 3258 as of this writing.
+<img  src= "pics\training\chesscomPuzzlesstats.jpg"/> 
+
+On lichess I attempted to solve 1439 puzzles with a puzzle rating of 2467 
+<img  src= "pics\training\lichesspuzzles.jpg"/> 
+
+<p>I would also solve puzzles from books. I have solved well over 3000 of them. Some of the books I solved from include the "complete chess workout" by Richard Palliser and "Chess training Pocket Book" by lev Albert. There is also a volume of chess puzzles written by a Russian author who's name I cannot recall.
+
+Some examples of my training notes books in which I solved some tactical problems: 
+<img src="pics\training\BookSolving.jpg">
 <br>
+<img src="pics\training\BookSolving2.jpg">
+</p>
+
+</p>
+        </section>
+<hr>
+        <section id="anti-blunder">
+            <h2>Anti-Blunder</h2>
+            <p> I noticed that in my more serious days of training, right after completing high school, blunders were rife. It later in 2017 or 2018 that I decided to take steps to remedy this weakness. Consequently, I would begin with a warm up of solving several tactical puzzles and then proceed to play a training game against a bot. My main got to chess.com bot was Naomi who was rated 2200. I would also play the shredder program which is available on the google play store. This is illustrated in the following picture:
+<img src= "pics\training\TrainingGames.jpg"/>
 
 
+</p>
+        </section>
 
+        <section id="positional-play">
+            <h2>Positional Play</h2>
+            <p> This is the harder aspect of chess for me. I struggled with it. I have read several chess books here but could never apply the principles in practical play. Some books I read include: 
+<ul>
+<li>Play like a grandmaster by Kotov</li>
+<li>"How to reassess your chess by Silman" (both 3rd and 4th editions)</li>
+<li>Can you be a positional genius by  Angus Dunnington </li>
+<li>Aaron Nimzovitch's "My System"</li>
+<li>Strategy and Planning by Dr. Max Euwe</li>
+<li>Think Like a grandmaster by Kotov</li>
+</ul>
+ For the most part, most of the most rudimentary positional ideas like put your rook on an open file came from watching <a href="https://youtu.be/r1mfsJV9TQU?si=kfIlFRAbEaBB0kXr">chessnetwork's live blitz sessions</a>. He would explain some ideas like exchange bishop for knight in a closed central position etc.
+</p>
+        </section>
 
+        <section id="annotated-games">
+            <h2>Annotated Games Collection</h2>
+            <p>
+Anotated games collections were from the books:
+<ul>
+<li>Masters of the chessboard by reti (uses old descriptive notation)</li>
+<li>My 60 memorable games by Bobby Fischer (advanced by I went through it)</li>
+<li>Modern chess ideas by Richard Reti (also old notation)</li>
+<li>The complete chess course by Fred Reinfeld</li>
+</ul>
 
+Special mention of chessnetwork and <a href="https://youtu.be/ZXs1_fFR0LA?si=tmyV0teKUw0OVeqm">John Barthamelow</a>. I followed their anotated games. I also learned a lot by watching Banter blitz sessions by <a href="https://www.youtube.com/live/tWK0mC4w5iI?si=sQ-JXm7OtTcJjlpE">Peter Svidler</a>.
+</p>
+<h3>Other media influences: </h3>
+<ul>
+  <li><a href="https://youtu.be/nwxTuRHlrYM?si=rNd7PKt7lBgf0M7z">Extreme Chess Championship<a/></li>
+  <li><a href="https://youtu.be/Rxy1wYFN29M?si=MMR4Ws5UUHIGGlPL">Karpov vs Kasparov 1990 Lyon<a/></li>
+  <li><a href="https://youtu.be/hSjev8SPDOE?feature=shared">Kasparov vs Intel Computer<a/></li>
+ 
+</ul>
 
-My first "legal" game in which the rules of the game were obeyed correctly was against a cellphone program I downloaded on my mother's cellphone back in 2006-2007. 
+        </section>
 
-<h2>Teenage years</h2>
+        <section id="endgames">
+            <h2>Endgames</h2>
+<p>For my endgame education, I began by reading Capablanca's book called "chess fundamentals" which taught me basic king and pawn endgames. I also watched a tape by <a href="https://youtu.be/YxAII4L075c?si=TjIdRqvjBkzqkhYj">World Champion Anatoly Karpov and Roman Dzindzichashvili  on youtube </a></p>
+            <p>
+Some books on endgames that I perused
+<ul>
+<li>Silmans Endgame course (very fine book!)</li>
+<li>Capablanca's "chess fundamentals"</li>
+<li>"100 endgames you must know" by Jesus de la Villa  (the best book out there)</li>
+<li>"The complete chess course" by Fred Reinfeld also had some endgames</li>
+</ul>
 
-My interest was really piqued after watching a Bobby Fischer documentary on YouTube called <a href="https://youtu.be/lwLM9bgE3tY?feature=shared">"Anything to Win"</a>towards the end of my high school years. Being beaten with great ease by students from St. Charles College also served to motivate me to grow and improve. <br><br>Admittedly, my growth in the 2020's has not been as substantive. I have lost a little bit of ambition. In a sense, I am waiting for it to "miraculously" come back so I can progress further and aim for an official chess title OTB.
+</p>
+        </section>
 
-<h2>Adult Years</h2>
+        <section id="opening-repertoire">
+            <h2>Opening Repertoire</h2>
+            <p>How did I learn openings? Well I did so from online videos. Mainly by watching videos on youtube. For example, I learned the queen's gambit by watching a <a href="https://youtu.be/XuC68vo82Mo?si=Nv6z9YbjOuR7GUyr">video by Roman Dzinzi</a>
 
-I've played many masters and international masters here. I lose most of the time, but I am satisfied with the occasional wins that I amass against titled players.
-<br><br>
- My proudest result is against the legendary Grandmaster Rogelio Antonio Jr., AKA GM Joey. I managed a 2-2 result against him in a 4-game mini-match:
+Learning from books is really hard and tedious. BEst is to store variations on the chess base software. It makes it easier to track and store variations. It also simplifies the review process.
+</p>
+        </section>
+    </div>
 
- 
-
-I have many other interests too. I like reading, following football occasionally (Chelsea and Barcelona supporter), learning, drawing, geology, popular science material, philosophy, psychology,futurism, AI, etc. I love animals a lot. A real lot.
-
-Overall, I have some eccentric characteristics that may take some getting used to. Once you get used to me, you may find that I'm quite harmless and can be generous laid back sometimes. 
-</div>
-<br>
-<div id="footer">
-&copy Zipho Innocent Lunika 2025
-</div>
+    <div id="footer">
+        &copy; Zipho Innocent Lunika 2025
+    </div>
 </body>
 </html>
